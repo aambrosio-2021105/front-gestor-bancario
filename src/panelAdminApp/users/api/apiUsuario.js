@@ -2,13 +2,13 @@ import axios from 'axios';
 import Swal from 'sweetalert2';
 
 const token = localStorage.getItem('token');
-const URL = "https://gestor-bancarios-bnswb7unn-aambrosio-2021105.vercel.app/api/admin/";
-const URLTC = "https://gestor-bancarios-bnswb7unn-aambrosio-2021105.vercel.app/api/tipoDeCuenta/mostrar-all";
-const URLC = "https://gestor-bancarios-bnswb7unn-aambrosio-2021105.vercel.app/api/cuenta/mostrar-all";
+const URL = "http://localhost:8080/api/admin/";
+const URLTC = "http://localhost:8080/api/tipoDeCuenta/mostrar-all";
+const URLC = "http://localhost:8080/api/cuenta/mostrar-all";
 
 export const apiUsuario = async () => {
     try {
-        const { data: { listaClientes } } = await axios.get(`${URL}mostrar-clientes`,
+        const { data: { listaClientes } } = await axios.get(`${URL}/mostrar-clientes`,
             { headers: { 'x-token': token } });
         return listaClientes;
     } catch ({ response: { data: { error } } }) {

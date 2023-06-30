@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav, NavItem, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAddressBook, faFileLines, faMoneyBill, faPowerOff } from '@fortawesome/free-solid-svg-icons';
+import { faAddressBook, faFileLines, faMoneyBillTransfer, faPowerOff } from '@fortawesome/free-solid-svg-icons';
 import { Opciones } from './Opciones';
 import { Link } from 'react-router-dom';
 import { ListUsers } from '../users/components/ListUsers';
@@ -31,9 +31,9 @@ export const SideBar = ({ selectedComponent }) => {
                   </Link> */}
                 </NavItem>
                 <NavItem className="my-5">
-                  <Nav.Link href="#" className="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
-                    <FontAwesomeIcon icon={faMoneyBill} className="fs-1" />
-                  </Nav.Link>
+                  <Link to="/cuentas-asc-desc" className="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
+                    <FontAwesomeIcon icon={faMoneyBillTransfer} className="fs-1" />
+                  </Link>
                 </NavItem>
                 <NavItem className="my-5">
                   <Nav.Link href="#" className="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">

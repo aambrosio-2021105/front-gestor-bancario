@@ -32,6 +32,7 @@ export const Opciones = () => {
               <div className="square-service-block">
                 <Link to={`/transaccion?cuenta=${c._id}`}>
                   <div className="ssb-icon">
+                  <h5 className="ssb-title">No. Cuenta: {c._id}</h5>
                     <FontAwesomeIcon icon={faSackDollar} className="fs-1" />
                     <h2 className="ssb-title">Saldo: <span>Q</span>{c.saldo}</h2>
                   </div>

@@ -19,6 +19,7 @@ export const EditarPerfil = () => {
   const [inputCorreo, setInputCorreo] = useState("");
   const [inputPassword, setInputPassword] = useState("");
   const [inputCelular, setInputCelular] = useState("");
+  const [inputIngresos_mensuales, setIngresosMensuales] = useState("");
   const [isInputClicked, setIsInputClicked] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
@@ -30,7 +31,7 @@ export const EditarPerfil = () => {
       setInputPassword(clienteData.password || "");
       setInputCelular(clienteData.celular || "");
       setInputCorreo(clienteData.correo || "");
-      console.log(cliente.celular);
+      setInputIngresos(clienteData.ingresos_mesuales || "");
     };
     fetchClienteData();
   }, []);
@@ -209,7 +210,7 @@ export const EditarPerfil = () => {
                       id="form1"
                       type="text"
                       size="lg"
-                      value={"Q " + cliente.ingresos_mesuales}
+                      value={"Q " + cliente.ingresos_mensuales}
                       disabled
                     />
                 </div>

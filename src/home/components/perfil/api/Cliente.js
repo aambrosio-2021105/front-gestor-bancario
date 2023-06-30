@@ -2,7 +2,7 @@ import axios from 'axios';
 import Swal from 'sweetalert2';
 
 const token = localStorage.getItem('token');
-const URL = "https://gestor-bancarios-bnswb7unn-aambrosio-2021105.vercel.app/api/cliente/";
+const URL = "http://localhost:8080/api/cliente/";
 
 // Mostrar informacion
 export const apiCliente = async () => {

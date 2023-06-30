@@ -3,7 +3,7 @@ import Swal from 'sweetalert2';
 
 const token = localStorage.getItem('token');
 
-const URLA = "https://gestor-bancarios-bnswb7unn-aambrosio-2021105.vercel.app/api/admin/mostrar-transferenciasA";
+const URLA = "http://localhost:8080/api/admin/mostrar-transferenciasA";
 
 export const apiCuentas = async(tipo) => {
    try {

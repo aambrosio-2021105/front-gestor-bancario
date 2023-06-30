@@ -35,9 +35,9 @@ export const SideBar = ({ selectedComponent }) => {
                   </Link>
                 </NavItem>
                 <NavItem className="my-5">
-                  <Nav.Link href="#" className="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
+                  <Link to="/transferencia" className="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">
                     <FontAwesomeIcon icon={faMoneyBill} className="fs-1" />
-                  </Nav.Link>
+                  </Link>
                 </NavItem>
                 <NavItem className="my-5">
                   <Nav.Link href="#" className="nav-link py-3 px-2" title="" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-original-title="Products">

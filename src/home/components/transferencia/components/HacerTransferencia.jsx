@@ -234,7 +234,7 @@ export const HacerTransferencia = () => {
                   <h3>Enviar a:</h3>
                 </div>
                 <div className="container">
-                  <p className="fw-bold mb-4 pb-2">Cuente para Transaccion</p>
+                  <p className="fw-bold mb-4 pb-2">Cuenta para Transaccion</p>
                   <Dropdown id="dropdown-variants-Primary">
                     <Dropdown.Toggle
                       variant="success"
@@ -313,7 +313,7 @@ export const HacerTransferencia = () => {
                 </div>
                 <div className="d-flex flex-row align-items-center mb-4 pb-1">
                   <div className="flex-fill mx-3">
-                    <p className="fw-bold mb-4 pb-2">El recipiente recibe:</p>
+                    <p className="fw-bold mb-4 pb-2">Lo recibido será:</p>
                     <div>
                       <div className="row">
                         <div className="col-3">
