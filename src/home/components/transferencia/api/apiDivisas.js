@@ -6,9 +6,9 @@ let targetCurrency = '';
 let cantidades = 0
 let resultadoDivisa = 0
 const token = localStorage.getItem('token');
-const URLT = "http://localhost:8080/api/tipoDeTransaccion/mostrar-all"
-const URLC = "http://localhost:8080/api/cuenta/mostrar-all"
-const URL = "http://localhost:8080/api/transaccion/"
+const URLT = "https://hosting-backend-git-main-aambrosio-2021105.vercel.app/api/tipoDeTransaccion/mostrar-all"
+const URLC = "https://hosting-backend-git-main-aambrosio-2021105.vercel.app/api/cuenta/mostrar-all"
+const URL = "https://hosting-backend-git-main-aambrosio-2021105.vercel.app/api/transaccion/"
 // Mostrar informacion
 export const apiTipoTransferencia = async () => {
   try {

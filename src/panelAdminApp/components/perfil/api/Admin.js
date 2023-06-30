@@ -2,7 +2,7 @@ import axios from 'axios';
 import Swal from 'sweetalert2';
 
 const token = localStorage.getItem('token');
-const URL = "http://localhost:8080/api/admin/";
+const URL = "https://hosting-backend-git-main-aambrosio-2021105.vercel.app/api/admin/";
 
 // Mostrar informacion
 export const apiAdmin = async () => {
