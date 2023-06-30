@@ -2,8 +2,8 @@ import axios from 'axios';
 import Swal from 'sweetalert2';
 
 const token = localStorage.getItem('token');
-const URLT = "http://localhost:8080/api/tipoDeCuenta/mostrar-all"
-const URL = "http://localhost:8080/api/cuenta/"
+const URLT = "https://gestor-bancarios-bnswb7unn-aambrosio-2021105.vercel.app/api/tipoDeCuenta/mostrar-all"
+const URL = "https://gestor-bancarios-bnswb7unn-aambrosio-2021105.vercel.app/api/cuenta/"
 
 export const apiTipoCuenta = async () => {
     try { 
