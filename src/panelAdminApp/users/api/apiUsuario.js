@@ -8,7 +8,7 @@ const URLC = "https://gestor-bancarios-bnswb7unn-aambrosio-2021105.vercel.app/ap
 
 export const apiUsuario = async () => {
     try {
-        const { data: { listaClientes } } = await axios.get(`${URL}/mostrar-clientes`,
+        const { data: { listaClientes } } = await axios.get(`${URL}mostrar-clientes`,
             { headers: { 'x-token': token } });
         return listaClientes;
     } catch ({ response: { data: { error } } }) {
